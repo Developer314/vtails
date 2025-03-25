@@ -1,2 +1,2 @@
-# vtails
+# Vtalis
 Vtalis – Multi-Purpose Statamic Starter Kit is a fully customizable and user-friendly theme designed for businesses, agencies, and professionals. Built with Bootstrap 5, it offers a sleek and responsive design with seamless editing capabilities. Every section, including Home Gallery, FAQs, Testimonials, Features, Services, Blogs, and Contact Us Form, is easily customizable through the Statamic CMS. Whether you need a modern portfolio, a business website, or a creative landing page, Vtails provides a flexible foundation for your needs. With its ready-made structure and intuitive customization options, building your perfect website has never been easier!

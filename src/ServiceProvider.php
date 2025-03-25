@@ -1,6 +1,6 @@
 <?php
 
-namespace Developer314\VtailsStatamicStarterKit;
+namespace Developer314\VtalisStatamicStarterKit;
 
 use Statamic\Providers\AddonServiceProvider;
 

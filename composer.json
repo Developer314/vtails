@@ -2,18 +2,18 @@
     "name": "developer314/vitalis",
     "extra": {
         "statamic": {
-            "name": "Vtails Statamic Starter kit",
-            "description": "Vtails Multi purpose Statamic Starter kit"
+            "name": "Vtalis Statamic Starter kit",
+            "description": "Vtalis Multi purpose Statamic Starter kit"
         },
         "laravel": {
             "providers": [
-                "Developer314\\VtailsStatamicStarterKit\\ServiceProvider"
+                "Developer314\\VtalisStatamicStarterKit\\ServiceProvider"
             ]
         }
     },
     "autoload": {
         "psr-4": {
-            "Developer314\\VtailsStatamicStarterKit\\": "src"
+            "Developer314\\VtalisStatamicStarterKit\\": "src"
         }
     },
     "autoload-dev": {

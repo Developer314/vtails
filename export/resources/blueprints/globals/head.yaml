@@ -1,0 +1,135 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: favicon
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Favicon
+  site_header:
+    display: 'Site Header'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: spinner_loading_text
+            field:
+              default: 'Loading Components..'
+              type: text
+              display: 'Spinner Loading Text'
+          -
+            handle: topbar_left_links
+            field:
+              type: grid
+              display: 'Topbar Left Links'
+              fields:
+                -
+                  handle: link_text
+                  field:
+                    type: text
+                    display: 'Link Text'
+                -
+                  handle: link_url
+                  field:
+                    type: text
+                    display: 'Link URL'
+                -
+                  handle: link_target
+                  field:
+                    options:
+                      -
+                        key: _self
+                        value: Self
+                      -
+                        key: _blank
+                        value: New
+                      -
+                        key: _parent
+                        value: Parent
+                      -
+                        key: _top
+                        value: Top
+                    default: _self
+                    type: select
+                    display: 'Link Target'
+                -
+                  handle: link_icon
+                  field:
+                    options:
+                      -
+                        key: fa-map-marker-alt
+                        value: 'Map Marker'
+                      -
+                        key: fa-envelope
+                        value: Envelop
+                    type: select
+                    display: 'Link Icon'
+          -
+            import: social_links
+          -
+            handle: site_logo
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Site Logo'
+  extra_scrpts:
+    display: 'Extra Scrpts'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: extra_scripts
+            field:
+              default: '<!-- Google Tags -->'
+              type: textarea
+              display: 'Extra Scripts'
+  site_navigation:
+    display: 'Site Navigation'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: nav_bar
+            field:
+              default: |-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                        <span class="fa fa-bars"></span>
+                                    </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                                        <div class="navbar-nav mx-0 mx-lg-auto">
+                                            <a href="/" class="nav-item nav-link active">Home</a>
+                                            <a href="/about" class="nav-item nav-link">About</a>
+                                            <a href="/service" class="nav-item nav-link">Services</a>
+                                            <a href="/blog" class="nav-item nav-link">Blog</a>
+                                            <div class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                                    <span class="dropdown-toggle">Pages</span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/feature" class="dropdown-item">Our Features</a>
+                                                    <a href="/team" class="dropdown-item">Our team</a>
+                                                    <a href="/testimonial" class="dropdown-item">Testimonial</a>
+                                                    <a href="/faqs" class="dropdown-item">FAQs</a>
+                                                    
+                                                </div>
+                                            </div>
+                                            <a href="/contact" class="nav-item nav-link">Contact</a>
+                                            <div class="nav-btn px-3">
+                                                <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                                <a href="/contact" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
+                                            </div>
+                                        </div>
+                                    </div>
+              type: textarea
+              display: 'Nav Bar'
+              instructions: 'This field is for experts only. Leave it as it is if you are not an expert. Make a backup before making any changes.'

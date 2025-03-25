@@ -1,0 +1,35 @@
+title: Footer
+data:
+  footer_logo: footer_logo.png
+  footer_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  box_1: |-
+    <h4 class="mb-4">Quick Links</h4>
+    <a href="/about"><i class="fas fa-angle-right me-2"></i> About Us</a>
+    <a href="/features"><i class="fas fa-angle-right me-2"></i> Features</a>
+    <a href="/services"><i class="fas fa-angle-right me-2"></i> Services</a>
+    <a href="/faqs"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+    <a href="/blogs"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+    <a href="/contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
+  box_2: |-
+    <h4 class="mb-4">Quick Links</h4>
+    <a href="/about"><i class="fas fa-angle-right me-2"></i> About Us</a>
+    <a href="/features"><i class="fas fa-angle-right me-2"></i> Features</a>
+    <a href="/services"><i class="fas fa-angle-right me-2"></i> Services</a>
+    <a href="/faqs"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+    <a href="/blogs"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+    <a href="/contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
+  box_3: |-
+    <h4 class="mb-4">Address</h4>
+    <p>Revolve 314 Digital</p>
+    <p>123 Palace</p>
+    <p>City</p>
+    <p>State</p>
+  copyright: |-
+    <div class="col-md-6 text-center text-md-end mb-md-0">
+                            <span class="text-body"><a href="#" ><i class="fas fa-copyright text-light me-2"></i>Site Name</a>, All right reserved.</span>
+                        </div>
+                        <div class="col-md-6 text-center text-md-start text-body">
+                           
+                            Site By <a href="https://www.revolve314.com.com" target="_blank">Revolve314 Digital</a>
+                        </div>
+  extra_scripts: '<!-- Tracking Codes -->'

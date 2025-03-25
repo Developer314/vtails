@@ -1,0 +1,14 @@
+<div class="container-fluid bg-light about py-5">
+            <div class="container pb-5">
+                {{ search:results index="default" }}
+    {{ if no_results }}
+        <h2>No results found for {{ get:q }}.</h2>
+    {{ else }}
+        <a href="{{ url }}">
+            <h2>{{ title }}</h2>
+            <p>{{ description | truncate:180 }}</p>
+        </a>
+    {{ /if }}
+{{ /search:results }}
+    </div>
+</div>

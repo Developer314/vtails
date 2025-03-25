@@ -1,0 +1,191 @@
+title: Head
+data:
+  favicon: icons8-favicon-48.png
+  spinner_loading_text: 'Loading Components..'
+  topbar_left_links:
+    -
+      id: m8hfr8uu
+      link_text: 'Our Location'
+      link_url: 'http://www.map.google.com'
+      link_target: _blank
+      link_icon: fa-map-marker-alt
+    -
+      id: m8hfshel
+      link_text: manup.rav@gmail.com
+      link_url: 'mailto:manup.rav@gmail.com'
+      link_target: _self
+      link_icon: fa-envelope
+    -
+      id: m8hfu8ma
+      link_text: 'About Us'
+      link_url: /about
+      link_target: _self
+      link_icon: fa-map-marker-alt
+  social_links:
+    -
+      id: m8hgtxdz
+      url: 'http://www.facebook.com'
+      icon: fa-facebook-f
+    -
+      id: m8hgu675
+      url: 'http://www.youtube.com'
+      icon: fa-youtube
+    -
+      id: m8hgudtv
+      url: 'http://www.linkedin.com'
+      icon: fa-linkedin-in
+    -
+      id: m8hgumbg
+      url: 'http://www.instagram.com'
+      icon: fa-instagram
+  site_logo: logo.png
+  html: |-
+    <!DOCTYPE html>
+    <html lang="{{ site:short_locale }}"> 
+
+        <head>
+            <meta charset="utf-8">
+            <title>{{meta_title}}</title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+            <meta content="{{meta_keywords}}" name="keywords">
+            <meta content="{{meta_description}}" name="description">
+            <link rel="icon" type="image/png" href="{{head:favicon}}"/>
+
+            <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
+            <!-- Icon Font Stylesheet -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+            <!-- /vitailsraries Stylesheet -->
+            <link rel="stylesheet" href="/vitails/animate/animate.min.css"/>
+            <link href="/vitails/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+            <link href="/vitails/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="/vitails/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Template Stylesheet -->
+            <link href="/vitails/css/style.css" rel="stylesheet">
+            {{extra_scripts}}
+        </head>
+
+        <body>
+
+            <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">{{head:spinner_loading_text}}</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+
+            <!-- Topbar Start -->
+            <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+                <div class="container">
+                    <div class="row gx-0 align-items-center">
+                        <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                            <div class="d-flex flex-wrap">
+
+    {{head:topbar_left_links}}
+                                <div class="{{if !last}}border-end border-primary {{/if}} pe-3 {{if !first}}ps-3{{/if}}">
+                                    <a href="{{link_url}}" target="{{link_target}}" alt="{{link_text}}" class="text-muted small"><i class="fas {{link_icon}} text-primary me-2"></i>{{link_text}}</a>
+                                </div>
+                                
+
+    {{/head:topbar_left_links}}
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center text-lg-end">
+                            <div class="d-flex justify-content-end">
+                                <div class="d-flex pe-3">
+    {{head:social_links}}
+                                    <a class="btn p-0 text-primary me-3" href="{{url}}" target="_blank"><i class="fab {{icon}}"></i></a>
+                          {{/head:social_links}}          
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Topbar End -->
+
+      
+
+
+    <!-- Navbar & Hero Start --> 
+            <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light"> 
+                        <a href="/" class="navbar-brand p-0">
+                            
+                          <img src="{{head:site_logo}}" alt="{{head:site_logo:alt}}">
+                        </a>
+                        
+                        
+                              {{head:nav_bar}}
+                        
+                    </nav>
+                </div>
+            </div>
+            <!-- Navbar & Hero End -->
+
+            <!-- Modal Search Start -->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex align-items-center bg-primary">
+                            <div class="input-group w-75 mx-auto d-flex">
+                                <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                                <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Search End -->
+  nav_bar: |-
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars"></span>
+                        </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav mx-0 mx-lg-auto">
+                                <a href="/" class="nav-item nav-link active">Home</a>
+                                <a href="/about" class="nav-item nav-link">About</a>
+                                <a href="/service" class="nav-item nav-link">Services</a>
+                                <a href="/blog" class="nav-item nav-link">Blog</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                        <span class="dropdown-toggle">Pages</span>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="/feature" class="dropdown-item">Our Features</a>
+                                        <a href="/team" class="dropdown-item">Our team</a>
+                                        <a href="/testimonial" class="dropdown-item">Testimonial</a>
+                                        <a href="/faqs" class="dropdown-item">FAQs</a>
+                                        
+                                    </div>
+                                </div>
+                                <a href="/contact" class="nav-item nav-link">Contact</a>
+                                <div class="nav-btn px-3">
+                                    <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                    <a href="/contact" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
+                                </div>
+                            </div>
+                        </div>

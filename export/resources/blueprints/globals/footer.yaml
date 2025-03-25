@@ -1,0 +1,76 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: footer_logo
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Footer Logo'
+          -
+            handle: footer_text
+            field:
+              default: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+              type: textarea
+              display: 'Footer Text'
+          -
+            handle: box_1
+            field:
+              default: |-
+                <h4 class="mb-4">Quick Links</h4>
+                <a href="/about"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                <a href="/features"><i class="fas fa-angle-right me-2"></i> Features</a>
+                <a href="/services"><i class="fas fa-angle-right me-2"></i> Services</a>
+                <a href="/faqs"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+                <a href="/blogs"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                <a href="/contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
+              type: textarea
+              display: 'Box 1'
+          -
+            handle: box_2
+            field:
+              default: |-
+                <h4 class="mb-4">Quick Links</h4>
+                <a href="/about"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                <a href="/features"><i class="fas fa-angle-right me-2"></i> Features</a>
+                <a href="/services"><i class="fas fa-angle-right me-2"></i> Services</a>
+                <a href="/faqs"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+                <a href="/blogs"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                <a href="/contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
+              type: textarea
+              display: 'Box 2'
+          -
+            handle: box_3
+            field:
+              default: |-
+                <h4 class="mb-4">Address</h4>
+                <p>Revolve 314 Digital</p>
+                <p>123 Palace</p>
+                <p>City</p>
+                <p>State</p>
+              type: textarea
+              display: 'Box 3'
+          -
+            handle: copyright
+            field:
+              default: |-
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                                        <span class="text-body"><a href="#" ><i class="fas fa-copyright text-light me-2"></i>Site Name</a>, All right reserved.</span>
+                                    </div>
+                                    <div class="col-md-6 text-center text-md-start text-body">
+                                       
+                                        Site By <a href="https://www.revolve314.com.com" target="_blank">Revolve314 Digital</a>
+                                    </div>
+              type: textarea
+              display: Copyright
+          -
+            handle: extra_scripts
+            field:
+              default: '<!-- Tracking Codes -->'
+              type: textarea
+              display: 'Extra Scripts'

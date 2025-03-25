@@ -1,0 +1,50 @@
+<div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <h4 class="text-primary">{{title_1}}</h4>
+                    <h1 class="display-4 mb-4">{{title_2}}</h1>
+                    <p class="mb-0">{{short_description}}</p>
+                </div>
+                
+                
+                
+                
+                <div class="row g-4">
+                    
+                    {{our_team:team_members}}
+                    
+                    
+                     {{ if count <= number_of_members_to_show }}
+        
+    
+
+                    
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{{image}}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+	                                {{social_links}}
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="{{url}}" target="_blank"><i class="fab {{icon}}"></i></a>
+                                    {{/social_links}}
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">{{name}}</h4>
+                                <p class="mb-0">{{designation}}</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                   {{ /if }}
+                   
+                    {{/our_team:team_members}}
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        

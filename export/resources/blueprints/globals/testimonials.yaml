@@ -1,0 +1,46 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: testimonials
+            field:
+              mode: stacked
+              type: grid
+              display: Testimonials
+              fields:
+                -
+                  handle: client_name
+                  field:
+                    default: 'Ohio Nest'
+                    type: text
+                    display: 'Client Name'
+                -
+                  handle: client_image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Client Image'
+                -
+                  handle: designation
+                  field:
+                    default: CEO
+                    type: text
+                    display: Designation
+                -
+                  handle: rating_out_of_5
+                  field:
+                    input_type: number
+                    default: '5'
+                    type: text
+                    display: 'Rating out of 5'
+                -
+                  handle: testimonial
+                  field:
+                    default: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+                    type: textarea
+                    display: Testimonial

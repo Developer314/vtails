@@ -1,0 +1,74 @@
+<div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <h4 class="text-primary">{{title_1}}</h4>
+                    <h1 class="display-4 mb-4">{{title_2}}</h1>
+                    <p class="mb-0">{{short_description}}</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    
+                    {{ collection:blog limit="{num_items_per_page}" paginate="true" as="posts" sort="date_created:desc" }}
+                    {{posts}}
+                    
+                    
+                   
+                    
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="blog-item">
+                            <div class="blog-img">
+	                            {{contents}}
+	                            {{if blog_image}}
+                                <img src="{{ glide :src="blog_image" w="416" h="333" }}" class="img-fluid rounded-top w-100" alt="{{title}}">
+                                {{/if}}
+                                {{if blog_category:label}}
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>{{blog_category:label}}</span>
+                                </div>
+                                {{/if}}
+                                {{/contents}}
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-primary"></span>&nbsp;{{author:name}}</div>
+                                    <div class="small"><span class="fa fa-calendar text-primary"></span>&nbsp;{{date_created}}</div>
+                                    
+                                </div>
+                                <a href="{{url}}" title="{{title}}" class="h4 d-inline-block mb-3">{{title}}</a>
+                                <p class="mb-3">{{short_description}}</p>
+                                <a href="{{url}}" class="btn p-0" title="{{title}}">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    {{/posts}}
+                    
+                    
+                    {{if show_pagination}}
+                    
+                    
+                     <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                  
+              
+
+                      
+                           {{ paginate }}
+                           {{ if prev_page }}
+                        <a href="{{ prev_page }}" class="btn btn-secondary py-3 px-5 mt-4"><i class="bi bi-chevron-left"></i></a>
+                        {{/if}}
+                       {{ if next_page }}
+                        <a href="{{ next_page }}" class="btn btn-secondary py-3 px-5 mt-4"><i class="bi bi-chevron-right"></i></a>
+                        {{/if}}
+                        
+                        {{ /paginate }}
+                        </div>
+                    
+                    
+                    
+                    {{/if}}
+                    
+                    {{/collection:blog}}
+                    
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,91 @@
+title: 'Our Team'
+data:
+  team_members:
+    -
+      id: m8myjggg
+      name: Manup
+      designation: Director
+      image: team-members/piclumen-1742814227054.png
+      social_links:
+        -
+          id: m8mylze9
+          icon: fa-facebook-f
+          url: 'http://www.facebook.com'
+        -
+          id: m8mym1r8
+          icon: fa-twitter
+          url: 'http://www.facebook.com'
+        -
+          id: m8mym3r5
+          icon: fa-linkedin-in
+          url: 'http://www.facebook.com'
+        -
+          id: m8mym6bn
+          icon: fa-instagram
+          url: 'http://www.facebook.com'
+    -
+      id: m8mymdom
+      name: Ratheesh
+      designation: Doctor
+      image: team-members/piclumen-1742814310539.png
+      social_links:
+        -
+          id: m8myne8v
+          icon: fa-facebook-f
+          url: 'http://www.facebook.com'
+        -
+          id: m8mynfd6
+          icon: fa-twitter
+          url: 'http://www.facebook.com'
+        -
+          id: m8mynghh
+          icon: fa-instagram
+          url: 'http://www.facebook.com'
+    -
+      id: m8mynlz1
+      name: 'Jack Rayaan'
+      designation: Programmer
+      image: team-members/piclumen-1742814422610.png
+      social_links:
+        -
+          id: m8mypscv
+          icon: fa-linkedin-in
+          url: 'http://www.facebook.com'
+        -
+          id: m8myptct
+          icon: fa-instagram
+          url: 'http://www.facebook.com'
+    -
+      id: m8mypxru
+      name: 'Martin L'
+      designation: 'Marketing Manager'
+      image: team-members/piclumen-1742814489417.png
+      social_links:
+        -
+          id: m8myr6ef
+          icon: fa-twitter
+          url: 'http://www.facebook.com'
+    -
+      id: m8myr956
+      name: 'Leon Messey'
+      designation: Player
+      image: team-members/piclumen-1742814543285.png
+      social_links:
+        -
+          id: m8myrule
+          icon: fa-linkedin-in
+          url: 'http://www.facebook.com'
+        -
+          id: m8myrvi7
+          icon: fa-instagram
+          url: 'http://www.facebook.com'
+    -
+      id: m8mysbr7
+      name: Jarnova
+      designation: Director
+      image: team-members/piclumen-1742814607698.png
+      social_links:
+        -
+          id: m8mytpbk
+          icon: fa-instagram
+          url: 'http://www.facebook.com'

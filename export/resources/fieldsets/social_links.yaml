@@ -1,0 +1,31 @@
+title: 'Social Links'
+fields:
+  -
+    handle: social_links
+    field:
+      type: grid
+      display: 'Social Links'
+      fields:
+        -
+          handle: url
+          field:
+            type: text
+            display: URL
+        -
+          handle: icon
+          field:
+            options:
+              -
+                key: fa-facebook-f
+                value: Facebook
+              -
+                key: fa-youtube
+                value: Youtube
+              -
+                key: fa-instagram
+                value: Instagram
+              -
+                key: fa-linkedin-in
+                value: 'Linked In'
+            type: select
+            display: iCon

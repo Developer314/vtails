@@ -1,0 +1,38 @@
+title: Testimonials
+data:
+  testimonials:
+    -
+      id: m8n9rfed
+      client_name: 'Michael Carter'
+      client_image: team-members/piclumen-1742814227054.png
+      designation: 'CEO, TechWave Solutions'
+      rating_out_of_5: 4
+      testimonial: 'This template exceeded my expectations! It’s beautifully designed, easy to customize, and performs flawlessly. Highly recommended!'
+    -
+      id: m8n9sew6
+      client_name: 'Sophia Patel'
+      client_image: team-members/piclumen-1742814310539.png
+      designation: 'Marketing Director, BrightEdge Media'
+      rating_out_of_5: 5
+      testimonial: 'A game-changer for our business! The responsiveness and clean code made integration seamless. Fantastic work!'
+    -
+      id: m8n9tc6b
+      client_name: 'Daniel Thompson'
+      client_image: team-members/piclumen-1742814422610.png
+      designation: 'Founder, InnovateHub'
+      rating_out_of_5: 3
+      testimonial: 'I’ve used many templates before, but this one stands out with its flexibility and stunning design. Worth every penny!'
+    -
+      id: m8n9u5ll
+      client_name: 'Emily Reynolds'
+      client_image: team-members/piclumen-1742814489417.png
+      designation: 'Product Manager, Visionary Apps'
+      rating_out_of_5: 4
+      testimonial: 'The best investment I’ve made for my startup. Smooth functionality, great UI, and excellent documentation!'
+    -
+      id: m8n9uz6e
+      client_name: 'Rajesh Verma'
+      client_image: team-members/piclumen-1742814543285.png
+      designation: 'COO, NextGen Enterprises'
+      rating_out_of_5: 2
+      testimonial: 'This template exceeded my expectations! It’s beautifully designed, easy to customize, and performs flawlessly. Highly recommended!'

@@ -1,0 +1,10 @@
+updatable: true
+export_paths:
+  - content
+  - resources/blueprints
+  - resources/views
+  - resources/fieldsets
+  - resources/forms
+  - resources/blueprints
+  - public/vitails
+  - public/assets

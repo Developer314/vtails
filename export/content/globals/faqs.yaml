@@ -1,0 +1,15 @@
+title: Faqs
+data:
+  faqs:
+    -
+      id: m8mjpl35
+      question: 'How can I customize this template to match my brand?'
+      answer: 'This template is built with clean, modular HTML and CSS, making it easy to customize. You can update colors, fonts, and layouts in the CSS file. If a CSS framework like Bootstrap is used, you can modify variables or use custom styles to achieve the desired look.'
+    -
+      id: m8mjpm74
+      question: 'Is this template optimized for SEO and fast loading?'
+      answer: 'Yes, the template follows SEO best practices, including proper heading structure, meta tags, and clean semantic HTML. Additionally, assets like CSS and JavaScript are minified for better performance. You can further improve speed by using a CDN for images and scripts.'
+    -
+      id: m8mjq0sr
+      question: 'Will I receive updates and support after purchasing this template?'
+      answer: 'Yes, you will receive free updates with bug fixes and improvements. Basic support is available for setup and minor customization. For advanced modifications, consider hiring a developer.'

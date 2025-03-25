@@ -1,0 +1,63 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: team_members
+            field:
+              mode: stacked
+              type: grid
+              display: 'Team Members'
+              fields:
+                -
+                  handle: name
+                  field:
+                    default: Manup
+                    type: text
+                    display: Name
+                -
+                  handle: designation
+                  field:
+                    default: Director
+                    type: text
+                    display: Designation
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: social_links
+                  field:
+                    type: grid
+                    display: 'Social Links'
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          options:
+                            -
+                              key: fa-facebook-f
+                              value: Facebook
+                            -
+                              key: fa-twitter
+                              value: Twitter
+                            -
+                              key: fa-linkedin-in
+                              value: Linkedin
+                            -
+                              key: fa-instagram
+                              value: Instagram
+                          type: select
+                          display: iCon
+                      -
+                        handle: url
+                        field:
+                          default: 'http://www.facebook.com'
+                          type: text
+                          display: URL

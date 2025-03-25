@@ -1,0 +1,539 @@
+title: Contents
+fields:
+  -
+    handle: contents
+    field:
+      remove_empty_nodes: false
+      type: bard
+      display: Contents
+      sets:
+        home_page_gallery:
+          display: 'Home Page Gallery'
+          icon: arrows-fit-to-width
+          sets:
+            home_gallery:
+              display: 'Home Gallery'
+              fields:
+                -
+                  handle: gallery_items
+                  field:
+                    mode: stacked
+                    type: grid
+                    display: 'Gallery Items'
+                    fields:
+                      -
+                        handle: image
+                        field:
+                          max_files: 1
+                          min_files: 1
+                          container: assets
+                          type: assets
+                          display: Image
+                      -
+                        handle: title_1
+                        field:
+                          default: 'Lorem ipsum'
+                          type: text
+                          display: 'Title 1'
+                      -
+                        handle: title_2
+                        field:
+                          default: 'Lorem ipsum is a dummy or placeholder'
+                          type: text
+                          display: 'Title 2'
+                      -
+                        handle: description
+                        field:
+                          default: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                          type: textarea
+                          display: Description
+                      -
+                        handle: button_one_text
+                        field:
+                          default: 'Watch Video'
+                          type: text
+                          display: 'Button One Text'
+                      -
+                        handle: button_one_link
+                        field:
+                          placeholder: 'https://youtu.be/Cbg4qfiDhH4?si=_PutUmrRgck2xoYf'
+                          type: text
+                          display: 'Button One Link'
+                      -
+                        handle: button_one_target
+                        field:
+                          options:
+                            -
+                              key: _blank
+                              value: Blank
+                            -
+                              key: _self
+                              value: Self
+                            -
+                              key: lightbox
+                              value: Lightbox
+                          default: _self
+                          type: select
+                          display: 'Button One Target'
+                      -
+                        handle: button_two_text
+                        field:
+                          default: 'Learn More'
+                          type: text
+                          display: 'Button Two Text'
+                      -
+                        handle: button_two_link
+                        field:
+                          default: /about
+                          type: text
+                          display: 'Button Two Link'
+                      -
+                        handle: button_two_target
+                        field:
+                          options:
+                            -
+                              key: _self
+                              value: Self
+                            -
+                              key: _blank
+                              value: New
+                            -
+                              key: lightbox
+                              value: Lightbox
+                          default: _self
+                          type: select
+                          display: 'Button Two Target'
+            feature_listing:
+              display: 'Feature Listing'
+              instructions: 'This is listing all features as columns'
+              icon: layout-three-columns
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'Our Features'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    default: 'Digital Security for a Safe Tomorrow'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: short_description
+                  field:
+                    default: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,'
+                    type: textarea
+                    display: 'Short Description'
+            feature_detail:
+              display: 'Feature Detail'
+              instructions: 'This is for Individual Feature detail page'
+              icon: align-left
+              fields:
+                -
+                  handle: feature_image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Feature Image'
+                -
+                  handle: feature_detail
+                  field:
+                    save_html: true
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Feature Detail'
+                -
+                  handle: short_desription
+                  field:
+                    default: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.'
+                    type: textarea
+                    display: 'Short Desription'
+            inside_page_banner:
+              display: 'Inside Page Banner'
+              icon: align-object-top
+              fields:
+                -
+                  handle: inside_page_banner
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Inside Page Banner'
+            about_us:
+              display: 'About Us'
+              instructions: 'About Us Block'
+              icon: id-face-scan
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'About Our Firm'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    default: '"Digital Security for a Safe Tomorrow" – Ensuring online protection and data safety.'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: description
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Description
+                -
+                  handle: about_us_image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'About Us Image'
+                -
+                  handle: our_numbers
+                  field:
+                    type: grid
+                    display: 'Our Numbers'
+                    fields:
+                      -
+                        handle: title
+                        field:
+                          default: 'Projects Completed'
+                          type: text
+                          display: Title
+                      -
+                        handle: number
+                        field:
+                          default: '100'
+                          type: text
+                          display: Number
+                          input_type: number
+            service_detail:
+              display: 'Service Detail'
+              instructions: 'This is for Individual Service Page'
+              icon: computer-voice-mail-microphone
+              fields:
+                -
+                  handle: service_image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Service Image'
+                -
+                  handle: service_detail
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Service Detail'
+                -
+                  handle: short_description
+                  field:
+                    default: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    type: textarea
+                    display: 'Short Description'
+            service_listing:
+              display: 'Service Listing'
+              instructions: 'This is for Listing Services'
+              icon: layout-display-split-quarters
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'Our Services'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    default: 'Exceptional Services'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: short_description
+                  field:
+                    default: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+                    type: textarea
+                    display: 'Short Description'
+            faqs:
+              display: Faqs
+              instructions: 'Faqs Can be manage from Globals Tab on the left'
+              icon: alert-help-question
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'Frequently Asked Questions'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    default: 'Popular FAQs'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+            blog_detail:
+              display: 'Blog Detail'
+              instructions: 'This is for Entering Blog data'
+              icon: text-formatting-wrap-image-right
+              fields:
+                -
+                  handle: blog_image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Blog Image'
+                -
+                  handle: blog_category
+                  field:
+                    options:
+                      -
+                        key: software_business
+                        value: 'Software Business'
+                      -
+                        key: wellness_business
+                        value: 'Wellness Business'
+                      -
+                        key: e_commerce
+                        value: E-commerce
+                      -
+                        key: construction
+                        value: Construction
+                      -
+                        key: branding
+                        value: Branding
+                    type: select
+                    display: 'Blog Category'
+                -
+                  handle: short_description
+                  field:
+                    default: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+                    type: textarea
+                    display: 'Short Description'
+                -
+                  handle: blog_detail
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Blog Detail'
+            blog_listing:
+              display: 'Blog Listing'
+              instructions: 'This is for Listing blogs'
+              icon: dashboard-layout
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'Our Blog'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    default: 'Stay up to date with our latest posts.'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: short_description
+                  field:
+                    default: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+                    type: textarea
+                    display: 'Short Description'
+                -
+                  handle: num_items_per_page
+                  field:
+                    input_type: number
+                    default: '3'
+                    type: text
+                    display: 'Num Items Per Page'
+                    always_save: true
+                -
+                  handle: show_pagination
+                  field:
+                    type: toggle
+                    display: 'Show Pagination'
+            team_members:
+              display: 'Team Members'
+              instructions: 'Team Members block'
+              icon: addon-boxes-stack
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'Our Team'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    default: 'Introducing Our Expert Team Members'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: short_description
+                  field:
+                    default: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+                    type: textarea
+                    display: 'Short Description'
+                -
+                  handle: number_of_members_to_show
+                  field:
+                    input_type: number
+                    default: '3'
+                    type: text
+                    display: 'Number of Members to show'
+            testimonials_listing:
+              display: 'Testimonials Listing'
+              icon: alert-warning-exclamation-mark
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'Our Testimonials'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    default: 'What Our Customers Are Saying'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: short_description
+                  field:
+                    default: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+                    type: textarea
+                    display: 'Short Description'
+            spacer:
+              display: Spacer
+              instructions: 'Add Space at top of the div'
+              icon: align-object-bottom
+              fields:
+                -
+                  handle: space_at_top
+                  field:
+                    options:
+                      -
+                        key: 1
+                        value: '1'
+                      -
+                        key: 2
+                        value: '2'
+                      -
+                        key: 3
+                        value: '3'
+                      -
+                        key: 4
+                        value: '4'
+                      -
+                        key: 5
+                        value: '5'
+                    type: select
+                    display: 'Space at top'
+            contact:
+              display: Contact
+              instructions: 'Contact Us Block with Form'
+              icon: phone-contact-phonebook
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'Contact Us'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    placeholder: 'If you have any comments please apply now'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: information
+                  field:
+                    default: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+                    type: textarea
+                    display: Information
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: contact_information
+                  field:
+                    type: grid
+                    display: 'Contact Information'
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          options:
+                            -
+                              key: fa-map-marker-alt
+                              value: 'Map Marker'
+                            -
+                              key: fa-envelope
+                              value: Envelop
+                            -
+                              key: fa-phone-alt
+                              value: Phone
+                            -
+                              key: fa-firefox-browser
+                              value: Browser
+                          default: fa-map-marker-alt
+                          type: select
+                          display: iCon
+                      -
+                        handle: text_to_display
+                        field:
+                          default: Address
+                          type: text
+                          display: 'Text to display'
+                      -
+                        handle: field_value
+                        field:
+                          default: '123 avenue, Revolve 314 digital, 695582'
+                          type: text
+                          display: 'Field Value'
+                -
+                  handle: gmap_iframe
+                  field:
+                    type: textarea
+                    display: 'GMap Iframe'
+                    instructions: 'Its the location of your office'
+                -
+                  handle: form_success_message
+                  field:
+                    default: 'Thank you for your submission, One of our rep will contact you soon'
+                    type: textarea
+                    display: 'Form Success Message'
+            search_results:
+              display: 'Search Results'
+              instructions: 'Search Result Page'
+              icon: search-magnifying-glass
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading

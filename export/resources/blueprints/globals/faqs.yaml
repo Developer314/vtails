@@ -1,0 +1,24 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: faqs
+            field:
+              type: grid
+              display: Faqs
+              fields:
+                -
+                  handle: question
+                  field:
+                    default: 'How can I customize this template to match my brand?'
+                    type: text
+                    display: Question
+                -
+                  handle: answer
+                  field:
+                    default: 'This template is built with clean, modular HTML and CSS, making it easy to customize. You can update colors, fonts, and layouts in the CSS file. If a CSS framework like Bootstrap is used, you can modify variables or use custom styles to achieve the desired look.'
+                    type: textarea
+                    display: Answer
